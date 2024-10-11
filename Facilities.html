@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Facilities Services - Gymnosia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="Facilities.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="navbar-container">
+                  <div class="logo">
+                      <img src="Assets/gymnosia-logo.png" alt="Gymnosia Logo">
+                  </div>  
+                  <ul class="nav">
+                      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                      <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+                      <li class="nav-item dropdown">
+                        <a href="menu.html" class="nav-link">Services</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="Rent.html" class="dropdown-item">Rent</a></li>
+                          <li><a href="Facilities.html" class="dropdown-item">Facilities</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>   
+      </header>
+
+    <main>
+        <section class="catalogue">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="Assets/Rent1.png" alt="Image 1">
+                    <img src="Assets/Rent2.png" alt="Image 2">
+                    <img src="Assets/Rent3.png" alt="Image 3">
+                    <img src="Assets/Rent4.png" alt="Image 4">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="section-title">Facilities Services</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="Assets/TennisBall.jpg" alt="Facilities1">
+                    <a class="card-button more-info" data-modal="link1">Tennis Ball</a>
+                </div>
+        
+                <div class="card">
+                    <img src="Assets/Badminton.jpg" alt="Facilities2">
+                    <a class="card-button more-info" data-modal="link2">Badminton Racket</a>
+                </div>
+        
+                <div class="card">
+                    <img src="Assets/TennisRacket.jpg" alt="Facilities3">
+                    <a class="card-button more-info" data-modal="link3">Tennis Racket</a>
+                </div>
+        
+                <div class="card">
+                    <img src="Assets/SoccerBall.jpg" alt="Facilities4">
+                    <a class="card-button more-info" data-modal="link4">Soccer Ball</a>
+                </div>
+        
+                <div class="card">
+                    <img src="Assets/Basketball.jpg" alt="Facilities5">
+                    <a class="card-button more-info" data-modal="link5">Basketball</a>
+                </div>
+        
+                <div class="card">
+                    <img src="Assets/GolfBall.jpg" alt="Facilities6">
+                    <a class="card-button more-info" data-modal="link6">Golf Ball</a>
+                </div>
+        
+                <div class="card">
+                    <img src="Assets/BaseballStick.jpg" alt="Facilities7">
+                    <a class="card-button more-info" data-modal="link7">Baseball Stick</a>
+                </div>
+        
+                <div class="card">
+                    <img src="Assets/CricketBall.jpg" alt="Facilities8">
+                    <a class="card-button more-info" data-modal="link8">Cricket Ball</a>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/1Baseball.jpg" alt="Facilities9">
+                    <a class="card-button more-info" data-modal="link8">Baseball</a>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/1Football.jpg" alt="Facilitiesl10">
+                    <a class="card-button more-info" data-modal="link8">Football</a>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/Volleyball.jpg" alt="Facilities11">
+                    <a class="card-button more-info" data-modal="link8">Volley Ball</a>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/CricketStick.jpg" alt="Facilitiesl12">
+                    <a class="card-button more-info" data-modal="link8">Cricket Stick</a>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/Shuttlecock.jpg" alt="Facilities13">
+                    <a class="card-button more-info" data-modal="link8">Shuttlecock</a>
+                </div>
+
+                <div class="card">
+                    <img src="Assets/SportTowel.jpg" alt="Facilities14">
+                    <a class="card-button more-info" data-modal="link8">Sport Towel</a>
+                </div>
+            </div>
+            <a href="Rent.html" class="link-to-facilities">go to rent &gt;&gt;</a>
+        </section>
+        
+        <div id="bookingModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Booking Form</h2>
+              <form id="bookingForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+          
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your email">
+          
+                <!-- New: Phone Number -->
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Your phone number" pattern="[0-9]{10,15}">
+          
+                <label for="type">Booking Type</label>
+                <input type="text" id="type" name="type" readonly>
+          
+                <!-- New: Select Hours -->
+                <label for="hours">Number of Hours</label>
+                <select id="hours" name="hours">
+                  <option value="1">1 hour</option>
+                  <option value="2">2 hours</option>
+                  <option value="3">3 hours</option>
+                  <option value="4">4 hours</option>
+                  <option value="5">5 hours</option>
+                </select>
+
+                <select id="payment" name="payment">
+                    <option value="Transfer Bank">Transfer Bank</option>
+                    <option value="Minimarket Outlet">Minimarket Outlet</option>
+                    <option value="Cash">Cash</option>
+                </select>
+          
+                <!-- New: Additional Facilities -->
+                <label for="facilities">Additional Facilities</label>
+                <div id="facilities">
+                  <input type="checkbox" id="wifi" name="facility" value="WiFi">
+                  <label for="wifi">WiFi (IDR 10,000)</label>
+          
+                  <input type="checkbox" id="locker" name="facility" value="Locker">
+                  <label for="locker">Locker (IDR 5,000)</label>
+          
+                  <input type="checkbox" id="refreshments" name="facility" value="Refreshments">
+                  <label for="refreshments">Refreshments (IDR 20,000)</label>
+                </div>
+          
+                <label for="details">Details</label>
+                <textarea id="details" name="details" placeholder="Enter additional details" rows="4"></textarea>
+          
+                <!-- New: Total Price Display -->
+                <h3>Total Price: <span id="totalPrice">IDR 0</span></h3>
+                <p id="debugInfo" style="color: red;"></p>
+          
+                <button type="submit">Submit Booking</button>
+              </form>
+            </div>
+          </div>
+
+          <div id="successPopup" class="popup-overlay">
+            <div class="popup-content">
+              <h2>Booking Successful!</h2>
+              <p>Your booking was successful. Please check the receipt below.</p>
+              <button id="showReceiptBtn" class="btn">Show Receipt</button>
+            </div>
+          </div>
+          
+          <!-- Receipt Popup -->
+          <div id="receiptPopup" class="popup-overlay">
+            <div class="popup-content">
+              <h2>Booking Receipt</h2>
+              <p>Here are the details of your booking:</p>
+              <ul id="receiptDetails">
+                <!-- Booking details will be inserted here via JavaScript -->
+              </ul>
+              <button id="closeReceiptBtn" class="btn">Close</button>
+            </div>
+          </div>
+        
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Contact Us.</h1>
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3986578712834!2d112.72404327357192!3d-7.309031421857973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb783b455f91%3A0x34914e4b67fe48ce!2sKetintang%20Tengah%20II%20No.8%2C%20RT.002%2FRW.10%2C%20Ketintang%2C%20Kec.%20Gayungan%2C%20Surabaya%2C%20Jawa%20Timur%2060231!5e0!3m2!1sen!2sid!4v1726451821604!5m2!1sen!2sid"  
+                width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>  
+            </div>
+  
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+  
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+  
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+  
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+      </section>
+      </body>
+    </main>
+  
+  <br>
+  <br>
+  <br>
+  
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-left">
+            <span>Gymnosia</span>
+          </div>
+          <div class="footer-right">
+            <div class="social-icons">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.google.com" target="_blank">
+                <i class="fab fa-google"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+    <script src="Facilities.js"></script>
+</body>
+</html>
